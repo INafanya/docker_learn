@@ -1,0 +1,41 @@
+site_name: Docker CheatSheet Slurm
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - toc:
+      title: На странице
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: readthedocs
+  features:
+    - content.code.copy
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: light
+      # primary: deep purple
+      # accent: deep purple
+      toggle:
+        icon: material/lightbulb
+        name: Темный режим
+    # Palette toggle for dark mode
+    - scheme: slate
+      # primary: light green
+      # accent: light green
+      toggle:
+        icon: material/lightbulb-outline
+        name: Светлый режим
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+

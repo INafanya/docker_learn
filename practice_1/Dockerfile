@@ -1,9 +1,6 @@
-# slurm-webpage/Dockerfile
-# Используем базовый образ Nginx
-FROM nginx:alpine
-
-# Копируем файл index.html в директорию Nginx по умолчанию
-COPY index.html /usr/share/nginx/html/
-
-# Документируем порт 80 для доступа
-EXPOSE 80
+FROM python:3.10-slim
+ENV PYTHONUNBUFFERED=1
+WORKDIR /app
+COPY ./write_data.py /app
+RUN pip install --no-cache-dir pymongo
+CMD ["python", "./write_data.py"]

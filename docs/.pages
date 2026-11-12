@@ -1,0 +1,26 @@
+nav:
+    - index.md
+    - Docker CLI и установка:
+        - install.md
+        - cli_common.md
+        - cli_image.md
+        - cli_container.md
+    - Dockerfile, создание образов:
+        - Dockerfile.md
+        - build.md
+    - Хранение данных (Volume, bind mount):
+        - volume.md
+        - bind_mount.md
+    - Docker compose:
+        - docker-compose.md
+        - cli_docker-compose.md
+    - Сеть:
+        - cli_network.md
+        - network.md
+    - Безопасность:
+        - security.md
+    - Аналоги:
+        - alternatives.md
+
+    - Мой_раздел:
+        - моя_заметка.md
